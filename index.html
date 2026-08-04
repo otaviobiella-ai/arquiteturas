@@ -20,14 +20,14 @@
     main{
         background-color: chartreuse;
         color: black;
-        text-align: ;
+        text-align:;
         max-width: 800px;
      }
 
-img    {
-width: 80px;
-height: 80px
-}
+   img    {
+  width: 80px;
+   height: 80px
+  }
 
 
 </style>
@@ -44,10 +44,12 @@ height: 80px
     Firmitas (Firmeza): A estrutura, a durabilidade e a estabilidade da construção.Utilitas (Utilidade): A funcionalidade e o propósito prático do espaço.Venustas (Beleza): A estética, a harmonia e o apelo visual da obra
    </h2> 
    <div>
+
 <h2>Meu primeiro post</h2>
 <p>Por: otavio</p>
 <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
-<button> 🏛<span><button>
+<button> 🏛<span>0</span></button>
+
 </div>
    <p>por otavio</p>
   </main>
@@ -55,5 +57,11 @@ height: 80px
   <script>
     const botao = document.querySelector("button");
     botao.addEventListener("click",botaoCLicado);
+
+    function botaoClicado() {
+   console.log("fui clicado");
+   let texto = botao.querySelector("span");
+   texto.textContent++;
+  }
   </script>
 </html>
